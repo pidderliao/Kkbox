@@ -14,21 +14,21 @@ function MaydayAlbum() {
           <div className="logo">
             <img src="https://pkg.kfs.io/images/1.0.0/logo/kkbox-logo-blue.svg"></img>
           </div>
-          <div className="menuList-container">
+          <div className="menuListContainer">
             <div className="menuList">
-              <li className="menuList">
+              <li className="menuItem">
                 <a href="https://www.kkbox.com/tw/tc/column/">最新</a>
               </li>
-              <li className="menuList">
+              <li className="menuItem">
                 <a href="https://www.kkbox.com/tw/tc/tag/article/OscB3jQpvdflOtQeg6">特別企劃</a>
               </li>
-              <li className="menuList">
+              <li className="menuItem">
                 <a href="https://kma.kkbox.com/charts/?terr=tw&lang=tc&_ga=2.90114011.1302886338.1587348652-346554611.1587348652">風雲榜</a>
               </li>
               <li className="menuItem">
                 <div className="dropdown">
-                  <button className="dropbtn">KK帳號</button>
-                  <div className="dropdown-content">
+                  <a className="menuItem">KK帳號</a>
+                  <div className="dropdownContent">
                     <a href="https://ssl.kkbox.com/tw/membership/account_info.php">什麼是KK帳號?</a>
                     <a href="https://www.kkbox.com/tw/reg.php">註冊</a>
                     <a href="https://ssl.kkbox.com/billing.php">繳費儲值</a>
@@ -40,8 +40,8 @@ function MaydayAlbum() {
               </li>
               <li className="menuItem">
                 <div className="dropdown">
-                  <button className="dropbtn">服務介紹</button>
-                  <div className="dropdown-content">
+                  <a className="menuItem">服務介紹</a>
+                  <div className="dropdownContent">
                     <a href="https://www.kkbox.com/tw/tc/download">支援平台</a>
                     <a href="https://kkbox-prime.com/">KKBOX Prime</a>
                     <a href="https://www.kkbox.com/service/kkboxkids/">KKBOX Kids</a>
@@ -72,29 +72,29 @@ function MaydayAlbum() {
               <div className="maydayContainer">
                 <img src="https://i.kfs.io/artist/global/6651,0v9/fit/264x264.jpg"></img>
               </div>
-
-              <div className="col8">
-                <div className="maydayInfo">
-                  <h1>五月天 (Mayday)</h1>
-                </div>
+            </div>
+            <div className="col8">
+              <div className="maydayInfo">
+                <h1>五月天 (Mayday)</h1>
               </div>
             </div>
           </div>
         </div>
+
         <div className="secondContainer">
           <div className="leftMenuContainer">
-            <h1 className="sectionTitle">相關歌手</h1>
+            <h2 className="sectionTitle">相關歌手</h2>
             <div className="row">
               <li className="col6">
                 <div className="artist">
                   <div className="cover">
                     <a href="https://www.kkbox.com/tw/tc/artist/z9OPs0z6SuTu6b8B0F0OD08I-index-1.html" title="四分衛 (Quarterback)">
-                      <img className="circle" src="https://i.kfs.io/artist/global/1549,0v4/fit/300x300.jpg" alt="四分衛 (Quarterback)"></img>
+                      <img src="https://i.kfs.io/artist/global/1549,0v4/fit/300x300.jpg" alt="四分衛 (Quarterback)"></img>
                     </a>
                   </div>
                   <div className="coverName">
                     <a href="https://www.kkbox.com/tw/tc/artist/z9OPs0z6SuTu6b8B0F0OD08I-index-1.html" title="四分衛 (Quarterback)">四分衛(Quarterback)
-                  </a>
+                      </a>
                   </div>
                 </div>
               </li>
@@ -107,7 +107,7 @@ function MaydayAlbum() {
                   </div>
                   <div className="coverName">
                     <a href="https://www.kkbox.com/tw/tc/artist/XEq926F3vz58ro50F01Wo08J-index-1.html" title="董事長樂團 (The Chairman)">董事長樂團(The Chairman)
-                  </a>
+                    </a>
                   </div>
                 </div>
               </li>
@@ -120,7 +120,7 @@ function MaydayAlbum() {
                   </div>
                   <div className="coverName">
                     <a href="https://www.kkbox.com/tw/tc/artist/LiqrAfgBMXMG9JM0F01ta08J-index-1.html" title="脫拉庫 (TOLAKU)">脫拉庫 (TOLAKU)
-                  </a>
+                    </a>
                   </div>
                 </div>
               </li>
@@ -133,7 +133,7 @@ function MaydayAlbum() {
                   </div>
                   <div className="coverName">
                     <a href="https://www.kkbox.com/tw/tc/artist/v1ifSmD8XkvNU4k0F01Ld08J-index-1.html" title="乱彈阿翔 (Luantan Ascent)">乱彈阿翔 (Luantan Ascent)
-                  </a>
+                    </a>
                   </div>
                 </div>
               </li>
@@ -146,7 +146,7 @@ function MaydayAlbum() {
                   </div>
                   <div className="coverName">
                     <a href="https://www.kkbox.com/tw/tc/artist/pmXDnwWzrwIDhmo0F098X08J-index-1.html" title="縱貫線 (SUPERBAND)">縱貫線 (SUPERBAND)
-                  </a>
+                    </a>
                   </div>
                 </div>
               </li>
@@ -159,7 +159,7 @@ function MaydayAlbum() {
                   </div>
                   <div className="coverName">
                     <a href="https://www.kkbox.com/tw/tc/artist/VGnW4JaQ5R7gOqe0F06GK08J-index-1.html" title="八三夭 (831)">八三夭 (831)
-                  </a>
+                    </a>
                   </div>
                 </div>
               </li>
@@ -172,7 +172,7 @@ function MaydayAlbum() {
                   </div>
                   <div className="coverName">
                     <a href="https://www.kkbox.com/tw/tc/artist/gimG2FvT2DbdsU50F05Fp08J-index-1.html" title="蘇打綠 (Sodagreen)">蘇打綠 (Sodagreen)
-                  </a>
+                    </a>
                   </div>
                 </div>
               </li>
@@ -185,16 +185,16 @@ function MaydayAlbum() {
                   </div>
                   <div className="coverName">
                     <a href="https://www.kkbox.com/tw/tc/artist/ozHoLIy-jPvlc1P0F06Sb08J-index-1.html" title="滅火器 (Fire EX.)">滅火器 (Fire EX.)
-                  </a>
+                    </a>
                   </div>
                 </div>
               </li>
             </div>
           </div>
           <div className="rightMenuContainer">
-            <h2 className="sectionTitle">歷年專輯</h2>
+            <h3 className="sectionTitle">歷年專輯</h3>
             <div className="row">
-              <li className="col6">
+              <li className="col3">
                 <div className="albumContainer">
                   <div className="artistAlbum" >
                     <a href="https://www.kkbox.com/tw/tc/album/F415Na9wziArI0F42Yqh009H-index.html">
@@ -203,11 +203,11 @@ function MaydayAlbum() {
                   </div>
                   <div className="albumName">
                     <a href="https://www.kkbox.com/tw/tc/album/F415Na9wziArI0F42Yqh009H-index.html" title="溫柔 #MaydayBlue20th (TENDERNESS #MaydayBlue20th)">溫柔 #MaydayBlue20th (TENDERNESS #MaydayBlue20th)
-                  </a>
+                    </a>
                   </div>
                 </div>
               </li>
-              <li className="col6">
+              <li className="col3">
                 <div className="albumContainer">
                   <div className="artistAlbum">
                     <a href="https://www.kkbox.com/tw/tc/album/MOOX7t-GN-sEq0F3.3r2009H-index.html">
@@ -216,11 +216,11 @@ function MaydayAlbum() {
                   </div>
                   <div className="albumName">
                     <a href="https://www.kkbox.com/tw/tc/album/MOOX7t-GN-sEq0F3.3r2009H-index.html" title="玫瑰少年 (Womxnly)">玫瑰少年 (Womxnly)
-                  </a>
+                    </a>
                   </div>
                 </div>
               </li>
-              <li className="col6">
+              <li className="col3">
                 <div className="albumContainer">
                   <div className="artistAlbum">
                     <a href="https://www.kkbox.com/tw/tc/album/wkBnTY7dHu1kN0F3TQWq009H-index.html">
@@ -230,11 +230,11 @@ function MaydayAlbum() {
 
                   <div className="albumName">
                     <a href="https://www.kkbox.com/tw/tc/album/wkBnTY7dHu1kN0F3TQWq009H-index.html" title="瘋狂世界 #MaydayBlue20th (World Crazy #MaydayBlue20th)">瘋狂世界 #MaydayBlue20th (World Crazy #MaydayBlue20th)
-                  </a>
+                    </a>
                   </div>
                 </div>
               </li>
-              <li className="col6">
+              <li className="col3">
                 <div className="albumContainer">
                   <div className="artistAlbum">
                     <a href="https://www.kkbox.com/tw/tc/album/gnYcI1x5xRWnr0F3JNxK009H-index.html">
@@ -244,11 +244,11 @@ function MaydayAlbum() {
 
                   <div className="albumName">
                     <a href="https://www.kkbox.com/tw/tc/album/gnYcI1x5xRWnr0F3JNxK009H-index.html" title="五月天 人生無限公司 Life Live 完整收錄篇">五月天 人生無限公司 Life Live 完整收錄篇
-                  </a>
+                    </a>
                   </div>
                 </div>
               </li>
-              <li className="col6">
+              <li className="col3">
                 <div className="albumContainer">
                   <div className="artistAlbum">
                     <a href="https://www.kkbox.com/tw/tc/album/ttNL7Fn1KHYfg0F3HkSz009H-index.html">
@@ -258,11 +258,11 @@ function MaydayAlbum() {
 
                   <div className="albumName">
                     <a href="https://www.kkbox.com/tw/tc/album/ttNL7Fn1KHYfg0F3HkSz009H-index.html" title="五月天 人生無限公司 Life Live 好友加班篇">五月天 人生無限公司 Life Live 好友加班篇
-                  </a>
+                    </a>
                   </div>
                 </div>
               </li>
-              <li className="col6">
+              <li className="col3">
                 <div className="albumContainer">
                   <div className="artistAlbum">
                     <a href="https://www.kkbox.com/tw/tc/album/Ih0mh0IytjEsF0F3G8yF009H-index.html">
@@ -272,11 +272,11 @@ function MaydayAlbum() {
 
                   <div className="albumName">
                     <a href="https://www.kkbox.com/tw/tc/album/Ih0mh0IytjEsF0F3G8yF009H-index.html" title="純真 #MaydayBlue20th (INNOCENCE #MaydayBlue20th)">純真 #MaydayBlue20th (INNOCENCE #MaydayBlue20th)
-                  </a>
+                    </a>
                   </div>
                 </div>
               </li>
-              <li className="col6">
+              <li className="col3">
                 <div className="albumContainer">
                   <div className="artistAlbum">
                     <a href="https://www.kkbox.com/tw/tc/album/IUT79QkFA45vM0F2hNrd009H-index.html">
@@ -286,11 +286,11 @@ function MaydayAlbum() {
 
                   <div className="albumName">
                     <a href="https://www.kkbox.com/tw/tc/album/IUT79QkFA45vM0F2hNrd009H-index.html" title="轉眼（2018 自傳最終章） (Final Chapter)">轉眼（2018 自傳最終章） (Final Chapter)
-                  </a>
+                    </a>
                   </div>
                 </div>
               </li>
-              <li className="col6">
+              <li className="col3">
                 <div className="albumContainer">
                   <div className="artistAlbum">
                     <a href="https://www.kkbox.com/tw/tc/album/C1UW7g3wz7OEZ0F23ZBT009H-index.html">
@@ -300,7 +300,7 @@ function MaydayAlbum() {
 
                   <div className="albumName">
                     <a href="https://www.kkbox.com/tw/tc/album/C1UW7g3wz7OEZ0F23ZBT009H-index.html" title="I WILL CARRY YOU">I WILL CARRY YOU
-                  </a>
+                    </a>
                   </div>
                 </div>
               </li>
@@ -309,7 +309,10 @@ function MaydayAlbum() {
           </div>
         </div>
       </div>
+      <div className="footer"></div>
     </div>
+
+
   );
 }
 
