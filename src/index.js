@@ -1,15 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Switch } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 import HeadComponent from './HeaderComponent';
 import ContentComponent from './ContentComponent';
 import FooterComponent from './FooterComponent';
+import routes from './Routes';
+import { renderRoutes } from 'react-router-config';
+import { Breadcrumb } from './BreadCrumb';
 
-function MaydayAlbum() {
+export default function MaydayAlbum() {
 
     return (
         <div>
             <HeadComponent />
+            <Breadcrumb />
+            {renderRoutes(routes)}
+
             <ContentComponent />
             <FooterComponent />
         </div>
@@ -22,7 +29,11 @@ function MaydayAlbum() {
 // ========================================
 
 ReactDOM.render(
-    <MaydayAlbum />,
+    <BrowserRouter>
+        <Switch>
+            <MaydayAlbum />
+        </Switch>
+    </BrowserRouter>,
     document.getElementById('root')
 );
 

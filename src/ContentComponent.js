@@ -1,22 +1,25 @@
 import './index.css';
 import './reset.css';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function ContentComponent() {
 
     return (
         <div>
             <div className="content">
+
                 <div className="blurBackgroundMask">
                     <div className="row">
                         <div className="col4">
                             <div className="maydayContainer">
-                                <img src="https://i.kfs.io/artist/global/6651,0v9/fit/264x264.jpg"></img>
+                                <img src="https://i.kfs.io/artist/global/6651,0v9/fit/300x300.jpg"></img>
                             </div>
                         </div>
                         <div className="col8">
                             <div className="maydayInfo">
                                 <h1>五月天 (Mayday)</h1>
+                                <div className="maydayInfo">專輯</div>
                             </div>
                         </div>
                     </div>
