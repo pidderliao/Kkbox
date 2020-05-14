@@ -17,29 +17,29 @@ export default function HeadComponent() {
                             <li className="menuItem">
                                 <Link className="menuItem" to="/">
                                     Home
-                            </Link>
+                                </Link>
                             </li>
                             <li className="menuItem">
                                 {/* <a href="https://www.kkbox.com/tw/tc/column/">最新</a> */}
                                 <Link to="/Latest">
                                     最新
-                            </Link>
+                                </Link>
                             </li>
                             <li className="menuItem">
                                 {/* <a href="https://www.kkbox.com/tw/tc/tag/article/OscB3jQpvdflOtQeg6">特別企劃</a> */}
                                 <Link to="/SpecialPlan">
                                     特別企劃
-                            </Link>
+                                </Link>
                             </li>
                             <li className="menuItem">
                                 {/* <a href="https://kma.kkbox.com/charts/?terr=tw&lang=tc&_ga=2.90114011.1302886338.1587348652-346554611.1587348652">風雲榜</a> */}
                                 <Link to="/Top10">
                                     風雲榜
-                            </Link>
+                                </Link>
                             </li>
                             <li className="menuItem">
                                 <div className="dropdown">
-                                    <Link className="menuItem">KKAccount</Link>
+                                    <Link className="menuItem" to="/KKAccount">KKAccount</Link>
                                     {/* // to="/electronics"
                                     // id="navbarDropdownMenuLink"
                                     // role="button"
@@ -85,7 +85,7 @@ export default function HeadComponent() {
                             </li>
                             <li className="menuItem">
                                 <div className="dropdown">
-                                    <Link className="menuItem">服務介紹</Link>
+                                    <Link className="menuItem" to="/ServiceIntro">服務介紹</Link>
                                     <div className="dropdownContent">
                                         <Link className="dropdownItem" to="/ServiceIntro/Support" >支援平台</Link>
                                         <Link className="dropdownItem" to="/ServiceIntro/KkboxPrime" >KKBOX Prime</Link>

@@ -1,12 +1,13 @@
 import React from 'react';
 import { renderRoutes } from 'react-router-config'
-import { Breadcrumb } from './BreadCrumb';
+import { Breadcrumb } from './Navbar';
+import Album from './Album';
 
 
 const Home = ({ location }) => {
     return (
         <div>
-
+            <h1>Home</h1>
             <Breadcrumb location={location.pathname} />
         </div>
 
@@ -239,10 +240,34 @@ const KkTix = () => {
 
 };
 
+const AlbumList = ({ location }) => {
+    const onMatchedRoutes = (matchedRoutes) => {
+        return [
+            {
+                route: {
+                    path: '/',
+                    breadcrumbName: 'Home'
+                }
+            },
+            ...matchedRoutes
+        ];
+    };
+    return (
+        <div>
+
+
+            <Breadcrumb
+                locationPath={location.pathname}
+                onMatchedRoutes={onMatchedRoutes}
+            />
+            <Album />
+        </div>
+    );
+};
 
 export {
     Home, Latest, SpecialPlan, Top10, KKAccount,
     WhatsKkAccount, signIn, StoredMoney, AccountOnly,
     MemberCenter, PointCenter, ServiceIntro, Support,
-    KkboxPrime, KkboxKids, KkTV, KkTix
+    KkboxPrime, KkboxKids, KkTV, KkTix, AlbumList
 };

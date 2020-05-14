@@ -1,23 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Switch } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 import HeadComponent from './HeaderComponent';
 import ContentComponent from './ContentComponent';
 import FooterComponent from './FooterComponent';
 import routes from './Routes';
 import { renderRoutes } from 'react-router-config';
-import { Breadcrumb } from './BreadCrumb';
+import { Breadcrumb } from './Navbar';
+import Album from './Album';
 
 export default function MaydayAlbum() {
 
     return (
         <div>
-            <HeadComponent />
             <Breadcrumb />
             {renderRoutes(routes)}
+            <HeadComponent />
 
             <ContentComponent />
+            <Route path="/Album">
+                <Album />
+            </Route>
             <FooterComponent />
         </div>
 

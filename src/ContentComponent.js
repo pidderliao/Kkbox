@@ -1,6 +1,6 @@
+import React from 'react';
 import './index.css';
 import './reset.css';
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function ContentComponent() {
@@ -19,7 +19,7 @@ export default function ContentComponent() {
                         <div className="col8">
                             <div className="maydayInfo">
                                 <h1>五月天 (Mayday)</h1>
-                                <div className="maydayInfo">專輯</div>
+                                <Link className="maydayInfo" to="/AlbumList">專輯</Link>
                             </div>
                         </div>
                     </div>

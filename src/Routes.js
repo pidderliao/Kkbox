@@ -2,7 +2,7 @@ import {
     Home, Latest, SpecialPlan, Top10, KKAccount,
     WhatsKkAccount, signIn, StoredMoney, AccountOnly,
     MemberCenter, PointCenter, ServiceIntro, Support,
-    KkboxPrime, KkboxKids, KkTV, KkTix
+    KkboxPrime, KkboxKids, KkTV, KkTix, AlbumList
 } from './Pages';
 
 const routes = [
@@ -106,6 +106,11 @@ const routes = [
             },
 
         ]
+    },
+    {
+        path: '/AlbumList',
+        component: AlbumList,
+        breadcrumbName: 'AlbumList',
     }
 
 
